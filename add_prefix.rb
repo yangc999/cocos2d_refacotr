@@ -3,8 +3,8 @@ require 'xcodeproj'
 require 'pry'
 
 puts 'input xcodeproj file path:'
-#proj_path = gets.chomp
-proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/proj.ios_mac/com.test.confuse.xcodeproj'
+proj_path = gets.chomp
+#proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/proj.ios_mac/com.test.confuse.xcodeproj'
 if File.exists?(proj_path) and File.directory?(proj_path)
     proj_dir = File.dirname(proj_path)
     proj = Xcodeproj::Project.open(proj_path)
