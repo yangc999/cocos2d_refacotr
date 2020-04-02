@@ -73,9 +73,9 @@ def replace_target(old_file, new_file)
         if target.source_build_phase.include?(old_file)
             puts 'replace target %s >>> %s -> %s' % [target.display_name, old_file.display_name, new_file.display_name]
             target.source_build_phase.add_file_reference(new_file, true)
-            target.source_build_phase.remove_file_reference(old_file)
         end
     end
+    old_file.build_files.each { |file| file.remove_from_project }
 end
 
 def clean_file(file)
