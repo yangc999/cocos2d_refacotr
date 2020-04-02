@@ -72,7 +72,6 @@ def replace_target(old_file, new_file)
     $proj.targets.each do |target|
         if target.source_build_phase.include?(old_file)
             puts 'replace target %s >>> %s -> %s' % [target.display_name, old_file.display_name, new_file.display_name]
-            target.source_build_phase.remove_file_reference(old_file)
             target.source_build_phase.add_file_reference(new_file, true)
         end
     end
