@@ -117,12 +117,22 @@ def visit(children)
                 File.open(path, 'r').each_line do |line|
                     li = line.chomp
                     if li[0, 5] == 'class'
-                        stop = li.index(':')
+                        stop = li.length
+                        if li.index(':')
+                            stop = li.index(':')
+                        elsif li.index('{')
+                            stop = li.index('{')
+                        end
                         cl = li[5..stop-1].strip()
                         $class[cl] = true
                         puts 'find cpp class declare %s' % cl
                     elsif li [0, 10] == '@interface'
-                        stop = li.index(':')
+                        stop = li.length
+                        if li.index(':')
+                            stop = li.index(':')
+                        elsif li.index('{')
+                            stop = li.index('{')
+                        end
                         cl = li[10..stop-1].strip()
                         $class[cl] = true
                         puts 'find oc class declare %s' % cl
