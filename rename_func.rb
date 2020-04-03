@@ -36,7 +36,7 @@ def visit()
                         if find_cls
                             fn = li.scan(/"(.*)"/)[0][0]
                             puts 'meet function %s' % fn
-                            $lua['classes'][cls_idx-1]['functions'] = Array.new if $lua['classes'][cls_idx-1].has_key?('functions') 
+                            $lua['classes'][cls_idx-1]['functions'] = Array.new if !$lua['classes'][cls_idx-1].has_key?('functions')
                             sn = '%s%s' % [$prefix, fn]
                             swp = {'old'=>fn, 'new'=>sn}
                             puts swp.to_s
