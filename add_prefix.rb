@@ -1,7 +1,6 @@
 
 require 'xcodeproj'
 require 'stringio'
-require 'pry'
 require 'yaml'
 
 $proj = nil
