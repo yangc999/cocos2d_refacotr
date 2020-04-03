@@ -9,7 +9,7 @@ $proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/pr
 def gen_dir()
     src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
     src_path = src.real_path.to_s
-    dir_path = '%s/custom' % src_path
+    dir_path = '%s/cocos/custom' % src_path
     if File.exists?(dir_path)
         Dir.foreach(dir_path) do |file_path|
             if file_path != '.' and file_path != '..'
@@ -33,7 +33,7 @@ end
 def gen_meta_file(meta)
     src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
     src_path = src.real_path.to_s
-    init_path = '%s/custom/init.lua' % src_path
+    init_path = '%s/cocos/custom/init.lua' % src_path
     File.open(init_path, 'a+') do |init_file|
         input_str = '%s = %s' % [meta['old'], meta['new']]
         init_file.puts input_str
