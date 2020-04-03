@@ -15,10 +15,10 @@ def visit()
             path = file.real_path.to_s
             if File.exists?(path)
                 buffer = StringIO.new
+                find_cls = false
+                cls_idx = 0
                 File.open(path, 'r').each_line do |line|
                     li = line.chomp
-                    find_cls = false
-                    cls_idx = 0
                     if li.include?('tolua_beginmodule')
                         cls = li.scan(/"(.*)"/)[0]
                         if cls
@@ -32,6 +32,7 @@ def visit()
                         end
                     elsif li.include?('tolua_function')
                         puts 'meet func'
+                        puts find_cls
                         if find_cls
                             fn = li.scan(/"(.*)"/)[0][0]
                             puts 'func %s' % fn
