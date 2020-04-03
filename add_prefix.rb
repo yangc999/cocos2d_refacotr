@@ -26,8 +26,7 @@ def replace_classname(file)
                     if li.include?(c)
                         nc = '%s%s' % [$prefix, c]
                         if li.include?('tolua_usertype')
-                            rt = li.scan(/".*"/)[0]
-                            ot = rt[1..rt.length-2]
+                            ot = li.scan(/"(.*)"/)[0]
                             nt = ot.gsub(c, nc)
                             $lua['classes'] << {'old'=>ot, 'new'=>nt}
                         end
@@ -118,46 +117,42 @@ def refact()
     end
 end
 
-def visit(children)
-    children.each do |child|
-        if child.class == Xcodeproj::Project::Object::PBXGroup
-            visit(child.children)
-        elsif child.class == Xcodeproj::Project::Object::PBXFileReference
-            ext = File.extname(child.path)
-            if ext == '.m' or ext == '.mm'
-                $todo << child
-            elsif ext == '.c' or ext == '.cpp'
-                $todo << child
-            elsif ext == '.h' or ext == '.hpp'
-                $todo << child
-                $header << child
-                path = child.real_path
-                if File.exists?(path)
-                    File.open(path, 'r').each_line do |line|
-                        li = line.chomp
-                        if li[0, 5] == 'class'
-                            stop = li.length
-                            if li.index(':')
-                                stop = li.index(':')
-                            elsif li.index('{')
-                                stop = li.index('{')
-                            elsif li.index(';')
-                                stop = li.index(';')
-                            end
-                            cl = li[5..stop-1].strip()
-                            $class[cl] = true
-                            puts 'find cpp class declare %s' % cl
-                        elsif li [0, 10] == '@interface'
-                            stop = li.length
-                            if li.index(':')
-                                stop = li.index(':')
-                            elsif li.index('{')
-                                stop = li.index('{')
-                            end
-                            cl = li[10..stop-1].strip()
-                            $class[cl] = true
-                            puts 'find oc class declare %s' % cl
+def visit()
+    $proj.files.each do |file|
+        ext = File.extname(file.path)
+        if ext == '.m' or ext == '.mm'
+            $todo << file
+        elsif ext == '.c' or ext == '.cpp'
+            $todo << file
+        elsif ext == '.h' or ext == '.hpp'
+            $todo << file
+            $header << file
+            path = file.real_path
+            if File.exists?(path)
+                File.open(path, 'r').each_line do |line|
+                    li = line.chomp
+                    if li[0, 5] == 'class'
+                        stop = li.length
+                        if li.index(':')
+                            stop = li.index(':')
+                        elsif li.index('{')
+                            stop = li.index('{')
+                        elsif li.index(';')
+                            stop = li.index(';')
                         end
+                        cl = li[5..stop-1].strip()
+                        $class[cl] = true
+                        puts 'find cpp class declare %s' % cl
+                    elsif li [0, 10] == '@interface'
+                        stop = li.length
+                        if li.index(':')
+                            stop = li.index(':')
+                        elsif li.index('{')
+                            stop = li.index('{')
+                        end
+                        cl = li[10..stop-1].strip()
+                        $class[cl] = true
+                        puts 'find oc class declare %s' % cl
                     end
                 end
             end
@@ -174,7 +169,7 @@ path = gets.chomp
 $proj_path = path.length > 0 ? path : $proj_path
 if File.exists?($proj_path) and File.directory?($proj_path)
     $proj = Xcodeproj::Project.open($proj_path)
-    visit($proj.main_group.children)
+    visit()
     refact()
     $proj.save()
 end
