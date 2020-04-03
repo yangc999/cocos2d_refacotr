@@ -23,7 +23,7 @@ def visit()
                         cls = li.scan(/"(.*)"/)[0]
                         $lua['classes'].each do |meta|
                             cls_idx += 1
-                            if meta.new == cls
+                            if meta['new'] == cls
                                 find_cls = true
                             end
                         end
