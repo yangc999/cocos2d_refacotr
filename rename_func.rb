@@ -20,15 +20,17 @@ def visit()
                     find_cls = false
                     cls_idx = 0
                     if li.include?('tolua_beginmodule')
-                        cls = li.scan(/"(.*)"/)[0][0]
-                        $lua['classes'].each do |meta|
-                            cls_idx += 1
-                            puts 'src:%s->%d' % [meta['new'], meta['new'].length]
-                            puts 'dst:%s->%d' % [cls, cls.length]
-                            puts meta['new'].to_s.eql?(cls) 
-                            if meta['new'].to_s.eql?(cls)
-                                puts 'match class %s' % cls
-                                find_cls = true
+                        cls = li.scan(/"(.*)"/)[0]
+                        if cls
+                            $lua['classes'].each do |meta|
+                                cls_idx += 1
+                                puts 'src:%s->%d' % [meta['new'], meta['new'].length]
+                                puts 'dst:%s->%d' % [cls[0], cls[0].length]
+                                puts meta['new'].to_s.eql?(cls[0])
+                                if meta['new'].to_s.eql?(cls[0])
+                                    puts 'match class %s' % cls[0]
+                                    find_cls = true
+                                end
                             end
                         end
                     elsif li.include?('tolua_function')
