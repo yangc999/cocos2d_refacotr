@@ -27,14 +27,10 @@ def replace_classname(file)
                     if li.include?(c)
                         nc = '%s%s' % [$prefix, c]
                         if li.include?('tolua_usertype')
-                            puts 'replace lua type'
                             rt = li.scan(/".*"/)[0]
-                            puts rt
                             ot = rt[1..rt.length-2]
                             nt = ot.gsub(c, nc)
-                            puts ot
-                            puts nt
-                            #$lua['classes'] << {'old'=>ot, 'new'=>nt}
+                            $lua['classes'] << {'old'=>ot, 'new'=>nt}
                         end
                         puts 'replace %s classname in line %d >>> %s -> %s' % [file.display_name, line_count, c, nc]
                         li = li.gsub(c, nc)
@@ -116,6 +112,10 @@ def refact()
     end
     $todo.each do |file|
         clean_file(file)
+    end
+    lua_path = '%s/lua.yaml' % $proj.main_group.real_path.to_s
+    File.open(lua_path) do |f|
+        f.puts $lua.to_yaml
     end
 end
 
