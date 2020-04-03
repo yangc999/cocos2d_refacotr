@@ -22,22 +22,22 @@ def visit()
                     if li.include?('tolua_beginmodule')
                         cls = li.scan(/"(.*)"/)[0]
                         if cls
+                            count = 0
                             $lua['classes'].each do |meta|
-                                cls_idx += 1
+                                count += 1
                                 if meta['new'].to_s.eql?(cls[0])
                                     puts 'match class %s' % cls[0]
                                     find_cls = true
+                                    cls_idx = count
                                 end
                             end
                         end
                     elsif li.include?('tolua_function')
-                        puts 'meet func'
-                        puts find_cls
                         if find_cls
                             fn = li.scan(/"(.*)"/)[0][0]
-                            puts 'func %s' % fn
+                            puts 'meet function %s' % fn
                             $lua['classes'][cls_idx-1]['functions'] = Array.new if $lua['classes'][cls_idx-1].has_key?('functions') 
-                            sn = '%%' % [$prefix, fn]
+                            sn = '%s%s' % [$prefix, fn]
                             swp = {'old'=>fn, 'new'=>sn}
                             puts swp.to_s
                             $lua['classes'][cls_idx-1]['functions'] << swp
