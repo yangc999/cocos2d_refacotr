@@ -26,7 +26,6 @@ def gen_func(old_class, new_class, new_func, old_func)
     func_body << 'function %s.%s(...)' % [old_class, old_func]
     func_body << '    return %s.%s(...)' % [new_class, new_func]
     func_body << 'end'
-    func_body << ''
     return func_body
 end
 
@@ -36,6 +35,7 @@ def gen_meta_file(meta)
     init_path = '%s/cocos/custom/init.lua' % src_path
     File.open(init_path, 'a+') do |init_file|
         input_str = '%s = %s' % [meta['old'], meta['new']]
+        init_file.puts ''
         init_file.puts input_str
         init_file.puts ''
         if meta['functions']
