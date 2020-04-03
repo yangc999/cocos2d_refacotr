@@ -62,7 +62,7 @@ def modify_require()
                     buffer.puts ''
                     buffer.puts '-- custom'
                     buffer.puts 'require "cocos.custom.init"'
-                    buffer.puts ''        
+                    buffer.puts ''
                 end
             end
             File.open(target_path, 'w') do |f|
@@ -80,7 +80,6 @@ def gen_lua(meta)
     modify_require()
 end
 
-$proj = nil
 puts 'input xcodeproj file path:'
 path = gets.chomp
 $proj_path = path.length > 0 ? path : $proj_path
