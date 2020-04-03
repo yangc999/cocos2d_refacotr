@@ -21,7 +21,7 @@ def visit()
                     find_cls = false
                     if li.include?('tolua_beginmodule')
                         cls = li.scan(/"(.*)"/)[0]
-                        puts 'find class' + cls
+                        puts 'find class %s' % cls
                         $lua['classes'].each do |meta|
                             cls_idx += 1
                             if meta['new'] == cls
