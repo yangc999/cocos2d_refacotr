@@ -31,6 +31,7 @@ def visit()
                             end
                         end
                     elsif li.include?('tolua_function')
+                        puts 'meet func'
                         if find_cls
                             fn = li.scan(/"(.*)"/)[0][0]
                             puts 'func %s' % fn
