@@ -12,8 +12,8 @@ def add_comment(file)
         li = line.chomp
         buffer.puts li
         if li[li.length-1] == ';'
-            for i in 0..rand(4) do
-                buffer.puts '// added comment'
+            for _ in 0..rand(4) do
+                buffer.puts '//**********add comment**********'
             end
         end
     end
@@ -32,9 +32,7 @@ if File.exists?($proj_path) and File.directory?($proj_path)
         ext = File.extname(file.display_name)
         puts file.display_name
         if ext == '.h' or ext == '.hpp' or ext == '.c' or ext == '.cpp' or ext == '.m' or ext == '.mm'
-            puts 'deal'
             add_comment(file)
         end
     end
-    $proj.save()
 end

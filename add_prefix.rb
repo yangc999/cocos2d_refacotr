@@ -2,6 +2,7 @@
 require 'xcodeproj'
 require 'stringio'
 require 'pry'
+require 'yaml'
 
 $proj = nil
 $proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/proj.ios_mac/com.test.confuse.xcodeproj'
@@ -10,6 +11,7 @@ $todo = Array.new
 $swap = Hash.new
 $header = Array.new
 $class = Hash.new
+$lua = Array.new
 
 def replace_classname(file)
     path = file.real_path.to_s
@@ -64,7 +66,7 @@ def replace_head(file)
         buffer.puts li
     end
     File.open(path, 'w') do |f|
-        f.puts buffer.string 
+        f.puts buffer.string
     end
 end
 
