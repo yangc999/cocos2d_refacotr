@@ -113,7 +113,7 @@ def refact()
         clean_file(file)
     end
     lua_path = '%s/lua.yaml' % $proj.main_group.real_path.to_s
-    File.open(lua_path) do |f|
+    File.open(lua_path, 'a+') do |f|
         f.puts $lua.to_yaml
     end
 end
