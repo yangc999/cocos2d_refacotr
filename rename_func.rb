@@ -17,14 +17,14 @@ def visit()
                 buffer = StringIO.new
                 File.open(path, 'r').each_line do |line|
                     li = line.chomp
-                    cls_idx = 0
                     find_cls = false
+                    cls_idx = 0
                     if li.include?('tolua_beginmodule')
                         cls = li.scan(/"(.*)"/)[0]
-                        puts 'find class %s' % cls
                         $lua['classes'].each do |meta|
                             cls_idx += 1
-                            if meta['new'] == cls
+                            if meta['new'].to_s.eql?(cls)
+                                puts 'match class %s' % cls
                                 find_cls = true
                             end
                         end
