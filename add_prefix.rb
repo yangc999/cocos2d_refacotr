@@ -11,7 +11,8 @@ $todo = Array.new
 $swap = Hash.new
 $header = Array.new
 $class = Hash.new
-$lua = Array.new
+$lua = Hash.new
+$lua['classes'] = Array.new
 
 def replace_classname(file)
     path = file.real_path.to_s
@@ -24,6 +25,14 @@ def replace_classname(file)
             $class.each_key do |c|
                 if li.include?(c)
                     nc = '%s%s' % [$prefix, c]
+                    if li.include?('tolua_usertype')
+                        rt = li.scan(/".*"/)[0]
+                        ot = rt[1..rt.length-2]
+                        nt = ot.gsub(c, nc)
+                        puts ot
+                        puts nt
+                        #$lua['classes'] << {'old'=>ot, 'new'=>nt}
+                    end
                     puts 'replace %s classname in line %d >>> %s -> %s' % [file.display_name, line_count, c, nc]
                     li = li.gsub(c, nc)
                 end
