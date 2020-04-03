@@ -26,7 +26,7 @@ def replace_classname(file)
                     if li.include?(c)
                         nc = '%s%s' % [$prefix, c]
                         if li.include?('tolua_usertype')
-                            ot = li.scan(/"(.*)"/)[0]
+                            ot = li.scan(/"(.*)"/)[0][0]
                             nt = ot.gsub(c, nc)
                             $lua['classes'] << {'old'=>ot, 'new'=>nt}
                         end
