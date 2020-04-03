@@ -21,6 +21,7 @@ def visit()
                     find_cls = false
                     if li.include?('tolua_beginmodule')
                         cls = li.scan(/"(.*)"/)[0]
+                        puts 'find class' + cls
                         $lua['classes'].each do |meta|
                             cls_idx += 1
                             if meta['new'] == cls
@@ -31,7 +32,7 @@ def visit()
                         if find_cls
                             fn = li.scan(/"(.*)"/)[0]
                             $lua['classes'][cls_idx-1]['functions'] = Array.new if $lua['classes'][cls_idx-1].has_key?('functions') 
-                            sn = '%/%' % [prefix, fn]
+                            sn = '%%' % [prefix, fn]
                             swp = {'old'=>fn, 'new'=>sn}
                             $lua['classes'][cls_idx-1]['functions'] << swp
                             li = li.gsub(fn, sn)
