@@ -16,66 +16,74 @@ $lua['classes'] = Array.new
 
 def replace_classname(file)
     path = file.real_path.to_s
-    buffer = StringIO.new
-    line_count = 0
-    File.open(path, 'r').each_line do |line|
-        line_count += 1
-        li = line.chomp
-        if !li.include?('#include') and !li.include?('#import')
-            $class.each_key do |c|
-                if li.include?(c)
-                    nc = '%s%s' % [$prefix, c]
-                    if li.include?('tolua_usertype')
-                        rt = li.scan(/".*"/)[0]
-                        ot = rt[1..rt.length-2]
-                        nt = ot.gsub(c, nc)
-                        puts ot
-                        puts nt
-                        #$lua['classes'] << {'old'=>ot, 'new'=>nt}
+    if File.exists?(path)
+        buffer = StringIO.new
+        line_count = 0
+        File.open(path, 'r').each_line do |line|
+            line_count += 1
+            li = line.chomp
+            if !li.include?('#include') and !li.include?('#import')
+                $class.each_key do |c|
+                    if li.include?(c)
+                        nc = '%s%s' % [$prefix, c]
+                        if li.include?('tolua_usertype')
+                            puts 'replace lua type'
+                            rt = li.scan(/".*"/)[0]
+                            puts rt
+                            ot = rt[1..rt.length-2]
+                            nt = ot.gsub(c, nc)
+                            puts ot
+                            puts nt
+                            #$lua['classes'] << {'old'=>ot, 'new'=>nt}
+                        end
+                        puts 'replace %s classname in line %d >>> %s -> %s' % [file.display_name, line_count, c, nc]
+                        li = li.gsub(c, nc)
                     end
-                    puts 'replace %s classname in line %d >>> %s -> %s' % [file.display_name, line_count, c, nc]
-                    li = li.gsub(c, nc)
                 end
             end
+            buffer.puts li
         end
-        buffer.puts li
-    end
-    File.open(path, 'w') do |f|
-        f.puts buffer.string 
+        File.open(path, 'w') do |f|
+            f.puts buffer.string 
+        end
     end
 end
 
 def replace_file(file)
     path = file.real_path.to_s
-    dir = File.dirname(path)
-    base = File.basename(path)
-    new_name = '%s/%s%s' % [dir, $prefix, base]
-    puts 'rename >>> %s -> %s' % [path, new_name]
-    File.rename(path, new_name)
-    new_ref = file.parent.new_reference(new_name)
-    $swap[file] = new_ref
+    if File.exists?(path)
+        dir = File.dirname(path)
+        base = File.basename(path)
+        new_name = '%s/%s%s' % [dir, $prefix, base]
+        puts 'rename >>> %s -> %s' % [path, new_name]
+        File.rename(path, new_name)
+        new_ref = file.parent.new_reference(new_name)
+        $swap[file] = new_ref
+    end
 end
 
 def replace_head(file)
     path = file.real_path.to_s
-    buffer = StringIO.new
-    line_count = 0
-    File.open(path, 'r').each_line do |line|
-        line_count += 1
-        li = line.chomp
-        if li.include?('#include') or li.include?('#import')
-            $header.each do |f|
-                if li.include?(f.display_name)
-                    nh = '%s%s' % [$prefix, f.display_name]
-                    puts 'replace %s header in line %d >>> %s -> %s' % [file.display_name, line_count, f.display_name, nh]
-                    li = li.gsub(f.display_name, nh)
+    if File.exists?(path)
+        buffer = StringIO.new
+        line_count = 0
+        File.open(path, 'r').each_line do |line|
+            line_count += 1
+            li = line.chomp
+            if li.include?('#include') or li.include?('#import')
+                $header.each do |f|
+                    if li.include?(f.display_name)
+                        nh = '%s%s' % [$prefix, f.display_name]
+                        puts 'replace %s header in line %d >>> %s -> %s' % [file.display_name, line_count, f.display_name, nh]
+                        li = li.gsub(f.display_name, nh)
+                    end
                 end
             end
+            buffer.puts li
         end
-        buffer.puts li
-    end
-    File.open(path, 'w') do |f|
-        f.puts buffer.string
+        File.open(path, 'w') do |f|
+            f.puts buffer.string
+        end
     end
 end
 
@@ -125,28 +133,32 @@ def visit(children)
                 $todo << child
                 $header << child
                 path = child.real_path
-                File.open(path, 'r').each_line do |line|
-                    li = line.chomp
-                    if li[0, 5] == 'class'
-                        stop = li.length
-                        if li.index(':')
-                            stop = li.index(':')
-                        elsif li.index('{')
-                            stop = li.index('{')
+                if File.exists?(path)
+                    File.open(path, 'r').each_line do |line|
+                        li = line.chomp
+                        if li[0, 5] == 'class'
+                            stop = li.length
+                            if li.index(':')
+                                stop = li.index(':')
+                            elsif li.index('{')
+                                stop = li.index('{')
+                            elsif li.index(';')
+                                stop = li.index(';')
+                            end
+                            cl = li[5..stop-1].strip()
+                            $class[cl] = true
+                            puts 'find cpp class declare %s' % cl
+                        elsif li [0, 10] == '@interface'
+                            stop = li.length
+                            if li.index(':')
+                                stop = li.index(':')
+                            elsif li.index('{')
+                                stop = li.index('{')
+                            end
+                            cl = li[10..stop-1].strip()
+                            $class[cl] = true
+                            puts 'find oc class declare %s' % cl
                         end
-                        cl = li[5..stop-1].strip()
-                        $class[cl] = true
-                        puts 'find cpp class declare %s' % cl
-                    elsif li [0, 10] == '@interface'
-                        stop = li.length
-                        if li.index(':')
-                            stop = li.index(':')
-                        elsif li.index('{')
-                            stop = li.index('{')
-                        end
-                        cl = li[10..stop-1].strip()
-                        $class[cl] = true
-                        puts 'find oc class declare %s' % cl
                     end
                 end
             end
