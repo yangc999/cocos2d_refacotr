@@ -131,7 +131,7 @@ def visit()
             if File.exists?(path)
                 File.open(path, 'r').each_line do |line|
                     li = line.chomp
-                    if li[0, 5] == 'class'
+                    if li.strip()[0, 5] == 'class'
                         stop = li.length
                         if li.index(':')
                             stop = li.index(':')
@@ -140,10 +140,10 @@ def visit()
                         elsif li.index(';')
                             stop = li.index(';')
                         end
-                        cl = li[5..stop-1].strip()
+                        cl = li[5..stop-1].strip().gsub(/[A-Z]+_DLL/, '').strip()
                         $class[cl] = true
                         puts 'find cpp class declare %s' % cl
-                    elsif li [0, 10] == '@interface'
+                    elsif li[0, 10] == '@interface'
                         stop = li.length
                         if li.index(':')
                             stop = li.index(':')
