@@ -8,6 +8,7 @@ $proj = nil
 $proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/proj.ios_mac/com.test.confuse.xcodeproj'
 $prefix = 'XB'
 $todo = Array.new
+$xib = Array.new
 $swap = Hash.new
 $header = Array.new
 $class = Hash.new
@@ -92,6 +93,28 @@ def replace_target(old_file, new_file)
     old_file.build_files.each { |file| file.remove_from_project }
 end
 
+def replace_xib(file)
+    path = file.real_path.to_s
+    if File.exists?(path)
+        buffer = StringIO.new
+        line_count = 0
+        File.open(path, 'r').each_line do |line|
+            line_count += 1
+            li = line.chomp
+            $class.each_key do |c|
+                if li.include?(c)
+                    nc = '%s%s' % [$prefix, c]
+                    li = li.gsub(c, nc)
+                end
+            end
+            buffer.puts li
+        end
+        File.open(path, 'w') do |f|
+            f.puts buffer.string
+        end
+    end
+end
+
 def clean_file(file)
     file.remove_from_project()
 end
@@ -109,6 +132,9 @@ def refact()
     $swap.each_value do |file|
         replace_classname(file)
     end
+    $xib.each_value do |file|
+        replace_xib(file)
+    end
     $todo.each do |file|
         clean_file(file)
     end
@@ -121,7 +147,9 @@ end
 def visit()
     $proj.files.each do |file|
         ext = File.extname(file.path)
-        if ext == '.m' or ext == '.mm'
+        if ext == '.xib'
+            $xib << file
+        elsif ext == '.m' or ext == '.mm'
             $todo << file
         elsif ext == '.c' or ext == '.cpp'
             $todo << file
