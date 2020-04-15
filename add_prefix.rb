@@ -126,6 +126,9 @@ def visit()
         elsif ext == '.c' or ext == '.cpp'
             $todo << file
         elsif ext == '.h' or ext == '.hpp'
+            if file.path.include?('Bridging-Header')
+                next
+            end
             $todo << file
             $header << file
             path = file.real_path
