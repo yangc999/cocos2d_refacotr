@@ -14,7 +14,7 @@ def gen_dir()
     if File.exists?(dir_path)
         Dir.foreach(dir_path) do |file_path|
             if file_path != '.' and file_path != '..'
-                File.delete(file_path)
+                File.delete('%s/%s' % [dir_path, file_path])
             end
         end
         Dir.rmdir(dir_path)
