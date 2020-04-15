@@ -23,10 +23,14 @@ def add_comment(file)
     end
 end
 
-$proj = nil
-puts 'input xcodeproj file path:'
-path = gets.chomp
-$proj_path = path.length > 0 ? path : $proj_path
+if ARGV[0] != nil
+    $proj_path = ARGV[0]
+else
+    puts 'input xcodeproj file path:'
+    path = gets.chomp
+    $proj_path = path.length > 0 ? path : $proj_path    
+end
+
 if File.exists?($proj_path) and File.directory?($proj_path)
     $proj = Xcodeproj::Project.open($proj_path)
     $proj.files.each do |file|
