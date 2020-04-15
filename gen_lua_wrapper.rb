@@ -52,7 +52,7 @@ end
 def modify_require()
     src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
     src_path = src.real_path.to_s
-    target_path = '%s/cocos/custom/init.lua' % src_path
+    target_path = '%s/cocos/init.lua' % src_path
     buffer = StringIO.new
     if File.exists?(target_path)
         if !File.open(target_path, 'r').read().include?('require "cocos.custom.init"')
