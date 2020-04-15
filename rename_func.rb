@@ -57,9 +57,22 @@ def visit()
     end
 end
 
-puts 'input xcodeproj file path:'
-path = gets.chomp
-$proj_path = path.length > 0 ? path : $proj_path
+if ARGV[0] != nil
+    $prefix = ARGV[0]
+else   
+    puts 'input prefix to add:'
+    head = gets.chomp
+    $prefix = head.length > 0 ? head : $prefix
+end
+
+if ARGV[1] != nil
+    $proj_path = ARGV[1]
+else
+    puts 'input xcodeproj file path:'
+    path = gets.chomp
+    $proj_path = path.length > 0 ? path : $proj_path
+end
+
 if File.exists?($proj_path) and File.directory?($proj_path)
     $proj = Xcodeproj::Project.open($proj_path)
     yaml_path = '%s/lua.yaml' % $proj.main_group.real_path.to_s 
