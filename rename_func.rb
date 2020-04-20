@@ -42,7 +42,7 @@ def visit()
                             swp = {'old'=>fn, 'new'=>sn}
                             puts swp.to_s
                             $lua['classes'][cls_idx-1]['functions'] << swp
-                            li = li.gsub(fn, sn)
+                            li = li.gsub('"%s"' % fn, '"%s"' % sn)
                         end
                     elsif li.include?('tolua_endmodule')
                         find_cls = false
