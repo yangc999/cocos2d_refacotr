@@ -22,7 +22,7 @@ def gen_dir()
     Dir.mkdir(dir_path)
 end
 
-def gen_func(old_class, new_class, new_func, old_func)
+def gen_func(old_class, new_class, old_func, new_func)
     func_body = Array.new()
     func_body << 'function %s.%s(...)' % [old_class, old_func]
     func_body << '    return %s.%s(...)' % [new_class, new_func]
