@@ -5,6 +5,7 @@ require 'stringio'
 require 'yaml'
 
 $proj = nil
+$prefix = ''
 $proj_path = '/home/yangc/testconfuse/com.test.confuse/frameworks/runtime-src/proj.ios_mac/com.test.confuse.xcodeproj'
 
 def gen_dir()
@@ -49,6 +50,17 @@ def gen_meta_file(meta)
     end
 end
 
+def gen_prefix()
+    src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
+    src_path = src.real_path.to_s
+    init_path = '%s/cocos/custom/init.lua' % src_path
+    File.open(init_path, 'a+') do |init_file|
+        init_file.puts ''
+        init_file.puts '_G["OCPrefix"] = "%s"' % $prefix
+        init_file.puts ''
+    end
+end
+
 def modify_require()
     src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
     src_path = src.real_path.to_s
@@ -78,11 +90,20 @@ def gen_lua(meta)
     meta['classes'].each do |mt|
         gen_meta_file(mt)
     end
+    gen_prefix()
     modify_require()
 end
 
 if ARGV[0] != nil
-    $proj_path = ARGV[0]
+    $prefix = ARGV[0]
+else   
+    puts 'input prefix to add:'
+    head = gets.chomp
+    $prefix = head.length > 0 ? head : $prefix
+end
+
+if ARGV[1] != nil
+    $proj_path = ARGV[1]
 else
     puts 'input xcodeproj file path:'
     path = gets.chomp
