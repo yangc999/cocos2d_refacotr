@@ -1,0 +1,17 @@
+groups:
+- group: DonDon
+  classes: 
+  - class: DonDonImp
+    methods:
+    - method:
+      return:
+    - method:
+      return:
+  - class: DonDonDelegate
+    methods:
+    - method: 
+      return: int
+    - method: 
+      return: void
+    - method: 
+      return: 

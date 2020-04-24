@@ -50,6 +50,7 @@ def gen_meta_file(meta)
     end
 end
 
+# temp proc
 def gen_prefix()
     src = $proj.main_group.find_subpath(File.join('Resources', 'src'), true)
     src_path = src.real_path.to_s
