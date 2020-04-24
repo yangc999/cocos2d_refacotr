@@ -1,17 +1,15 @@
 groups:
 - group: DonDon
   classes: 
-  - class: DonDonImp
+  - className: DonDonImp
     methods:
-    - method:
-      return:
-    - method:
-      return:
-  - class: DonDonDelegate
+    - methodName: register
+      returnType: BOOL
+    - methodName: proc
+      returnType: void
+  - className: DonDonDelegate
     methods:
-    - method: 
-      return: int
-    - method: 
-      return: void
-    - method: 
-      return: 
+    - methodName: login
+      returnType: BOOL
+    - methodName: callback
+      returnType: void

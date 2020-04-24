@@ -30,13 +30,13 @@ def genCode(meta)
     root_path = $proj.main_group.real_path.to_s
     dir_path = '%s/%s' % [root_path, meta.group]
     meta.classes.each do |cl|
-        h_path = '%s/%s.h' % [dir_path, cl.class]
-        c_path = '%s/%s.m' % [dir_path, cl.class]
+        h_path = '%s/%s.h' % [dir_path, cl.className]
+        c_path = '%s/%s.m' % [dir_path, cl.className]
         File.open(h_path) do |file|
             file.puts '#import <Foundation/Foudation.h>'
-            file.puts '@interface %s : NSObject' % cl.class
+            file.puts '@interface %s : NSObject' % cl.className
             cl.methods.each do |fn|
-                file.puts '%s(%s) %s' % ['-', fn.return, fn.method]
+                file.puts '%s(%s) %s' % ['-', fn.returnType, fn.methodName]
                 file.puts ''
             end
             file.puts '@end'
@@ -45,17 +45,19 @@ def genCode(meta)
     
         File.open(c_path) do |file|
             file.puts '#import "%s"' % File.basename(h_path)
-            file.puts '@implementation %s' % meta.class
+            file.puts '@implementation %s' % meta.className
             cl.methods.each do |fn|
                 file.puts ''
-                file.puts '%s(%s) %s' % ['-', fn.return, fn.method]
+                file.puts '%s(%s) %s' % ['-', fn.returnType, fn.methodName]
                 file.puts '{'                
-                if fn.return == 'NSString*'
-                    fn.puts 'reutrn @"";'    
-                elsif fn.return == 'void'
-                    fn.puts ''
-                elseif fn.return == 'int'
-                    fn.puts ''
+                if fn.returnType == 'NSString*'
+                    fn.puts 'return @"";'    
+                elsif fn.returnType == 'BOOL'
+                    fn.puts 'return YES;'
+                elsif fn.returnType == 'void'
+                    fn.puts 'return ;'
+                elsif fn.returnType == 'int'
+                    fn.puts 'return 1;'
                 end
                 file.puts '}'
             end
