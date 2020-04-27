@@ -1,5 +1,5 @@
 groups:
-- group: DonDon
+- groupName: DonDon
   classes: 
   - className: DonDonImp
     methods:
