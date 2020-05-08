@@ -33,8 +33,8 @@ def queryWord(w)
 end
 
 def randomWord()
-    idx = rand(0..$arr.length)
     begin
+        idx = rand(0..$arr.length)
         word = $arr[idx].chomp().gsub('\'s', '')
     end while word.match?(/[^a-zA-Z]/)
     return word.downcase()
