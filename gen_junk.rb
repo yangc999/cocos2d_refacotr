@@ -122,6 +122,7 @@ def testGenCode(meta)
                 end
                 file.puts '}'
             end
+        end
     end
 end
 
