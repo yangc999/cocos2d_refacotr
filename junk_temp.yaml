@@ -1,0 +1,1718 @@
+---
+groups:
+- groupName: mayflower
+  classes:
+  - className: novartis
+    methods:
+    - returnType: NSString*
+      methodName: needlewoman
+    - returnType: BOOL
+      methodName: montreal
+    - returnType: NSString*
+      methodName: jurisdiction
+    - returnType: BOOL
+      methodName: reliever
+    - returnType: void
+      methodName: probe
+    - returnType: void
+      methodName: laundrywoman
+  - className: interstice
+    methods:
+    - returnType: BOOL
+      methodName: juniors
+    - returnType: int
+      methodName: copybooks
+    - returnType: int
+      methodName: bronx
+    - returnType: int
+      methodName: semimonthlies
+    - returnType: BOOL
+      methodName: grumbler
+    - returnType: BOOL
+      methodName: judicatories
+  - className: wests
+    methods:
+    - returnType: BOOL
+      methodName: coming
+    - returnType: void
+      methodName: herzegovina
+    - returnType: BOOL
+      methodName: reconfiguration
+    - returnType: int
+      methodName: dijon
+    - returnType: NSString*
+      methodName: stocktaking
+    - returnType: int
+      methodName: depilatory
+  - className: frontiersman
+    methods:
+    - returnType: int
+      methodName: holes
+    - returnType: BOOL
+      methodName: moog
+    - returnType: int
+      methodName: yang
+    - returnType: BOOL
+      methodName: pail
+    - returnType: NSString*
+      methodName: poem
+    - returnType: BOOL
+      methodName: string
+  - className: berm
+    methods:
+    - returnType: NSString*
+      methodName: container
+    - returnType: int
+      methodName: homewrecker
+    - returnType: BOOL
+      methodName: nations
+    - returnType: BOOL
+      methodName: enigma
+    - returnType: int
+      methodName: roaring
+    - returnType: int
+      methodName: biden
+  - className: voronezh
+    methods:
+    - returnType: int
+      methodName: changsha
+    - returnType: BOOL
+      methodName: midsection
+    - returnType: NSString*
+      methodName: harelip
+    - returnType: BOOL
+      methodName: sarnies
+    - returnType: NSString*
+      methodName: degases
+    - returnType: int
+      methodName: oenophile
+  - className: mendelevium
+    methods:
+    - returnType: void
+      methodName: suppliers
+    - returnType: void
+      methodName: hypnotherapist
+    - returnType: BOOL
+      methodName: donation
+    - returnType: int
+      methodName: spoon
+    - returnType: void
+      methodName: maneuverability
+    - returnType: NSString*
+      methodName: piracy
+  - className: tincture
+    methods:
+    - returnType: BOOL
+      methodName: lump
+    - returnType: void
+      methodName: undertow
+    - returnType: NSString*
+      methodName: skewered
+    - returnType: BOOL
+      methodName: modern
+    - returnType: void
+      methodName: abstinence
+    - returnType: NSString*
+      methodName: reminders
+  - className: badlands
+    methods:
+    - returnType: BOOL
+      methodName: annual
+    - returnType: int
+      methodName: garnishment
+    - returnType: BOOL
+      methodName: sweeping
+    - returnType: NSString*
+      methodName: spur
+    - returnType: void
+      methodName: emergence
+    - returnType: void
+      methodName: scoff
+  - className: souse
+    methods:
+    - returnType: int
+      methodName: boadicea
+    - returnType: void
+      methodName: handcarts
+    - returnType: int
+      methodName: cornwall
+    - returnType: NSString*
+      methodName: allan
+    - returnType: NSString*
+      methodName: tasers
+    - returnType: void
+      methodName: wavebands
+  - className: atavists
+    methods:
+    - returnType: int
+      methodName: endgames
+    - returnType: void
+      methodName: wherefores
+    - returnType: BOOL
+      methodName: declamation
+    - returnType: void
+      methodName: patriarch
+    - returnType: NSString*
+      methodName: motherlands
+    - returnType: void
+      methodName: lotion
+- groupName: hemorrhage
+  classes:
+  - className: colts
+    methods:
+    - returnType: BOOL
+      methodName: biochemist
+    - returnType: NSString*
+      methodName: klondikes
+    - returnType: int
+      methodName: drafts
+    - returnType: int
+      methodName: fresher
+    - returnType: void
+      methodName: hummers
+    - returnType: void
+      methodName: somnambulism
+  - className: luddite
+    methods:
+    - returnType: int
+      methodName: griffins
+    - returnType: BOOL
+      methodName: centennial
+    - returnType: int
+      methodName: wharton
+    - returnType: void
+      methodName: conic
+    - returnType: int
+      methodName: kramer
+    - returnType: BOOL
+      methodName: dwarf
+  - className: readership
+    methods:
+    - returnType: NSString*
+      methodName: bunuel
+    - returnType: void
+      methodName: eddies
+    - returnType: BOOL
+      methodName: mesquite
+    - returnType: int
+      methodName: vladivostok
+    - returnType: BOOL
+      methodName: philosophy
+    - returnType: NSString*
+      methodName: merino
+  - className: sitarists
+    methods:
+    - returnType: BOOL
+      methodName: tramcars
+    - returnType: void
+      methodName: rhea
+    - returnType: void
+      methodName: cheese
+    - returnType: BOOL
+      methodName: methamphetamine
+    - returnType: void
+      methodName: inferiority
+    - returnType: BOOL
+      methodName: limbs
+  - className: visualization
+    methods:
+    - returnType: void
+      methodName: scrips
+    - returnType: void
+      methodName: mammon
+    - returnType: int
+      methodName: protocol
+    - returnType: void
+      methodName: scuppering
+    - returnType: int
+      methodName: blazed
+    - returnType: int
+      methodName: showboat
+  - className: upstairs
+    methods:
+    - returnType: NSString*
+      methodName: slummed
+    - returnType: int
+      methodName: kidders
+    - returnType: NSString*
+      methodName: slav
+    - returnType: void
+      methodName: ooze
+    - returnType: BOOL
+      methodName: photocopiers
+    - returnType: NSString*
+      methodName: abets
+  - className: elasticity
+    methods:
+    - returnType: void
+      methodName: seine
+    - returnType: void
+      methodName: douro
+    - returnType: void
+      methodName: formosan
+    - returnType: void
+      methodName: orbs
+    - returnType: NSString*
+      methodName: steeplejack
+    - returnType: BOOL
+      methodName: arthur
+  - className: classified
+    methods:
+    - returnType: BOOL
+      methodName: refuse
+    - returnType: void
+      methodName: giving
+    - returnType: void
+      methodName: wire
+    - returnType: int
+      methodName: westerly
+    - returnType: void
+      methodName: brent
+    - returnType: BOOL
+      methodName: kills
+  - className: cecily
+    methods:
+    - returnType: int
+      methodName: curved
+    - returnType: BOOL
+      methodName: greenwood
+    - returnType: void
+      methodName: email
+    - returnType: void
+      methodName: antiperspirant
+    - returnType: NSString*
+      methodName: dialectics
+    - returnType: BOOL
+      methodName: schneider
+  - className: pauline
+    methods:
+    - returnType: NSString*
+      methodName: intermediary
+    - returnType: BOOL
+      methodName: ashlars
+    - returnType: int
+      methodName: newsgroup
+    - returnType: BOOL
+      methodName: luncheonette
+    - returnType: void
+      methodName: mere
+    - returnType: void
+      methodName: c
+  - className: diocesan
+    methods:
+    - returnType: BOOL
+      methodName: weepie
+    - returnType: int
+      methodName: china
+    - returnType: int
+      methodName: neglect
+    - returnType: BOOL
+      methodName: ky
+    - returnType: int
+      methodName: clusters
+    - returnType: void
+      methodName: collations
+- groupName: guadalcanal
+  classes:
+  - className: pay
+    methods:
+    - returnType: NSString*
+      methodName: snapshots
+    - returnType: int
+      methodName: dickens
+    - returnType: BOOL
+      methodName: penn
+    - returnType: NSString*
+      methodName: registrant
+    - returnType: BOOL
+      methodName: shrek
+    - returnType: void
+      methodName: quay
+  - className: arcadian
+    methods:
+    - returnType: NSString*
+      methodName: sharon
+    - returnType: BOOL
+      methodName: unknown
+    - returnType: void
+      methodName: nepotist
+    - returnType: void
+      methodName: moseley
+    - returnType: NSString*
+      methodName: depletion
+    - returnType: BOOL
+      methodName: jack
+  - className: exoneration
+    methods:
+    - returnType: int
+      methodName: smoker
+    - returnType: void
+      methodName: vermeer
+    - returnType: NSString*
+      methodName: landlord
+    - returnType: int
+      methodName: ball
+    - returnType: NSString*
+      methodName: coco
+    - returnType: NSString*
+      methodName: subcontinent
+  - className: waistbands
+    methods:
+    - returnType: BOOL
+      methodName: dishcloths
+    - returnType: int
+      methodName: swedenborg
+    - returnType: int
+      methodName: backbiter
+    - returnType: NSString*
+      methodName: catfish
+    - returnType: int
+      methodName: codpiece
+    - returnType: int
+      methodName: vestals
+  - className: hangman
+    methods:
+    - returnType: void
+      methodName: keys
+    - returnType: NSString*
+      methodName: compel
+    - returnType: BOOL
+      methodName: jurist
+    - returnType: BOOL
+      methodName: transylvania
+    - returnType: BOOL
+      methodName: estrogen
+    - returnType: int
+      methodName: besting
+  - className: human
+    methods:
+    - returnType: NSString*
+      methodName: arrogance
+    - returnType: NSString*
+      methodName: selectness
+    - returnType: int
+      methodName: quibbler
+    - returnType: NSString*
+      methodName: nectarine
+    - returnType: int
+      methodName: suriname
+    - returnType: BOOL
+      methodName: dean
+  - className: alps
+    methods:
+    - returnType: void
+      methodName: esprit
+    - returnType: void
+      methodName: courage
+    - returnType: NSString*
+      methodName: retroviruses
+    - returnType: int
+      methodName: pact
+    - returnType: NSString*
+      methodName: blackhead
+    - returnType: void
+      methodName: spinals
+  - className: brawl
+    methods:
+    - returnType: int
+      methodName: rate
+    - returnType: BOOL
+      methodName: thundershower
+    - returnType: NSString*
+      methodName: heirloom
+    - returnType: void
+      methodName: thread
+    - returnType: void
+      methodName: borscht
+    - returnType: void
+      methodName: breads
+  - className: dab
+    methods:
+    - returnType: void
+      methodName: appreciation
+    - returnType: NSString*
+      methodName: lugger
+    - returnType: BOOL
+      methodName: pouted
+    - returnType: NSString*
+      methodName: wearings
+    - returnType: BOOL
+      methodName: aggregates
+    - returnType: int
+      methodName: wartime
+  - className: downbeat
+    methods:
+    - returnType: int
+      methodName: flint
+    - returnType: void
+      methodName: annihilators
+    - returnType: NSString*
+      methodName: schedar
+    - returnType: int
+      methodName: exercycle
+    - returnType: void
+      methodName: bullheads
+    - returnType: int
+      methodName: lapps
+  - className: telling
+    methods:
+    - returnType: void
+      methodName: landlubber
+    - returnType: void
+      methodName: micros
+    - returnType: void
+      methodName: monikers
+    - returnType: NSString*
+      methodName: ghost
+    - returnType: void
+      methodName: ergot
+    - returnType: NSString*
+      methodName: ramrod
+- groupName: rechartering
+  classes:
+  - className: cornwall
+    methods:
+    - returnType: int
+      methodName: bathroom
+    - returnType: BOOL
+      methodName: mira
+    - returnType: BOOL
+      methodName: fettering
+    - returnType: int
+      methodName: monkeys
+    - returnType: int
+      methodName: flaw
+    - returnType: BOOL
+      methodName: academies
+  - className: ewe
+    methods:
+    - returnType: void
+      methodName: archdiocese
+    - returnType: void
+      methodName: illustrator
+    - returnType: int
+      methodName: churlishness
+    - returnType: void
+      methodName: disobedience
+    - returnType: void
+      methodName: allover
+    - returnType: BOOL
+      methodName: backroom
+  - className: karma
+    methods:
+    - returnType: int
+      methodName: negatives
+    - returnType: BOOL
+      methodName: kepi
+    - returnType: BOOL
+      methodName: spiv
+    - returnType: void
+      methodName: tenderfoot
+    - returnType: BOOL
+      methodName: volkswagen
+    - returnType: void
+      methodName: cohesiveness
+  - className: ambergris
+    methods:
+    - returnType: NSString*
+      methodName: wain
+    - returnType: void
+      methodName: cawed
+    - returnType: BOOL
+      methodName: dadaists
+    - returnType: BOOL
+      methodName: stout
+    - returnType: int
+      methodName: filler
+    - returnType: BOOL
+      methodName: grasses
+  - className: nightshades
+    methods:
+    - returnType: int
+      methodName: lovely
+    - returnType: int
+      methodName: pride
+    - returnType: void
+      methodName: outs
+    - returnType: BOOL
+      methodName: arrow
+    - returnType: int
+      methodName: impracticality
+    - returnType: NSString*
+      methodName: blackberry
+  - className: swazis
+    methods:
+    - returnType: void
+      methodName: windows
+    - returnType: void
+      methodName: welly
+    - returnType: BOOL
+      methodName: tractor
+    - returnType: int
+      methodName: canvassing
+    - returnType: int
+      methodName: throwaway
+    - returnType: void
+      methodName: wagtail
+  - className: popper
+    methods:
+    - returnType: int
+      methodName: macrobiotics
+    - returnType: BOOL
+      methodName: dodoma
+    - returnType: int
+      methodName: digestives
+    - returnType: BOOL
+      methodName: aline
+    - returnType: NSString*
+      methodName: reelection
+    - returnType: int
+      methodName: baobab
+  - className: ennoblement
+    methods:
+    - returnType: int
+      methodName: brianna
+    - returnType: BOOL
+      methodName: potion
+    - returnType: int
+      methodName: policies
+    - returnType: void
+      methodName: quartos
+    - returnType: int
+      methodName: tipple
+    - returnType: int
+      methodName: harpy
+  - className: j
+    methods:
+    - returnType: BOOL
+      methodName: cerebration
+    - returnType: int
+      methodName: toluene
+    - returnType: NSString*
+      methodName: dinettes
+    - returnType: BOOL
+      methodName: criminologist
+    - returnType: BOOL
+      methodName: hester
+    - returnType: int
+      methodName: despaired
+  - className: hartford
+    methods:
+    - returnType: int
+      methodName: grenadines
+    - returnType: int
+      methodName: ko
+    - returnType: void
+      methodName: philters
+    - returnType: int
+      methodName: salesperson
+    - returnType: void
+      methodName: nuke
+    - returnType: int
+      methodName: inmates
+  - className: nathans
+    methods:
+    - returnType: BOOL
+      methodName: mohave
+    - returnType: NSString*
+      methodName: pencils
+    - returnType: void
+      methodName: retching
+    - returnType: int
+      methodName: sour
+    - returnType: void
+      methodName: matt
+    - returnType: NSString*
+      methodName: franchisers
+- groupName: rumpelstiltskin
+  classes:
+  - className: waitperson
+    methods:
+    - returnType: BOOL
+      methodName: rewed
+    - returnType: BOOL
+      methodName: quadrenniums
+    - returnType: int
+      methodName: sever
+    - returnType: NSString*
+      methodName: paar
+    - returnType: BOOL
+      methodName: outrigger
+    - returnType: void
+      methodName: crow
+  - className: tell
+    methods:
+    - returnType: BOOL
+      methodName: tyranny
+    - returnType: NSString*
+      methodName: blockhead
+    - returnType: void
+      methodName: instruction
+    - returnType: BOOL
+      methodName: fours
+    - returnType: void
+      methodName: expediter
+    - returnType: void
+      methodName: videoconferencing
+  - className: surgical
+    methods:
+    - returnType: int
+      methodName: serbia
+    - returnType: BOOL
+      methodName: week
+    - returnType: void
+      methodName: penny
+    - returnType: int
+      methodName: magnolia
+    - returnType: int
+      methodName: trifles
+    - returnType: BOOL
+      methodName: ginned
+  - className: majuro
+    methods:
+    - returnType: int
+      methodName: linguistics
+    - returnType: NSString*
+      methodName: marilyn
+    - returnType: BOOL
+      methodName: bridge
+    - returnType: void
+      methodName: invalided
+    - returnType: int
+      methodName: best
+    - returnType: void
+      methodName: canalization
+  - className: rosy
+    methods:
+    - returnType: NSString*
+      methodName: spurt
+    - returnType: int
+      methodName: hunt
+    - returnType: NSString*
+      methodName: jimsonweed
+    - returnType: NSString*
+      methodName: bleeding
+    - returnType: BOOL
+      methodName: earwig
+    - returnType: int
+      methodName: utah
+  - className: mackintosh
+    methods:
+    - returnType: BOOL
+      methodName: semiotics
+    - returnType: int
+      methodName: blandness
+    - returnType: BOOL
+      methodName: exploit
+    - returnType: int
+      methodName: actuation
+    - returnType: int
+      methodName: mammal
+    - returnType: void
+      methodName: plumage
+  - className: peeresses
+    methods:
+    - returnType: int
+      methodName: ad
+    - returnType: int
+      methodName: roderick
+    - returnType: void
+      methodName: devilment
+    - returnType: void
+      methodName: duluth
+    - returnType: BOOL
+      methodName: ora
+    - returnType: BOOL
+      methodName: forebears
+  - className: void
+    methods:
+    - returnType: void
+      methodName: bela
+    - returnType: BOOL
+      methodName: parnassuses
+    - returnType: int
+      methodName: admissions
+    - returnType: void
+      methodName: peseta
+    - returnType: NSString*
+      methodName: alley
+    - returnType: int
+      methodName: maytag
+  - className: cajolery
+    methods:
+    - returnType: int
+      methodName: fluffs
+    - returnType: void
+      methodName: microlight
+    - returnType: BOOL
+      methodName: collectives
+    - returnType: int
+      methodName: eaton
+    - returnType: void
+      methodName: exactitude
+    - returnType: int
+      methodName: glee
+  - className: greeley
+    methods:
+    - returnType: BOOL
+      methodName: falsifications
+    - returnType: NSString*
+      methodName: chat
+    - returnType: int
+      methodName: cisterns
+    - returnType: int
+      methodName: kingdoms
+    - returnType: int
+      methodName: firebox
+    - returnType: NSString*
+      methodName: buffeting
+  - className: mumbai
+    methods:
+    - returnType: int
+      methodName: troubleshooter
+    - returnType: int
+      methodName: radiography
+    - returnType: NSString*
+      methodName: spendthrift
+    - returnType: void
+      methodName: bosch
+    - returnType: BOOL
+      methodName: concertmasters
+    - returnType: int
+      methodName: atahualpa
+- groupName: attempt
+  classes:
+  - className: bernie
+    methods:
+    - returnType: NSString*
+      methodName: acuter
+    - returnType: BOOL
+      methodName: lulls
+    - returnType: int
+      methodName: brights
+    - returnType: NSString*
+      methodName: aquarian
+    - returnType: NSString*
+      methodName: levy
+    - returnType: void
+      methodName: archbishop
+  - className: paellas
+    methods:
+    - returnType: int
+      methodName: overselling
+    - returnType: BOOL
+      methodName: taxidermists
+    - returnType: void
+      methodName: porosity
+    - returnType: void
+      methodName: necrology
+    - returnType: BOOL
+      methodName: geologists
+    - returnType: NSString*
+      methodName: narratives
+  - className: cantered
+    methods:
+    - returnType: void
+      methodName: sibyl
+    - returnType: int
+      methodName: sobriquet
+    - returnType: void
+      methodName: decommissioning
+    - returnType: int
+      methodName: architecture
+    - returnType: BOOL
+      methodName: codicils
+    - returnType: BOOL
+      methodName: knockoff
+  - className: buzzards
+    methods:
+    - returnType: int
+      methodName: marjorie
+    - returnType: int
+      methodName: coed
+    - returnType: NSString*
+      methodName: ndjamena
+    - returnType: int
+      methodName: stave
+    - returnType: BOOL
+      methodName: basil
+    - returnType: int
+      methodName: cascade
+  - className: skewbalds
+    methods:
+    - returnType: NSString*
+      methodName: nearside
+    - returnType: NSString*
+      methodName: cynosure
+    - returnType: BOOL
+      methodName: lire
+    - returnType: int
+      methodName: step
+    - returnType: int
+      methodName: sunbelt
+    - returnType: void
+      methodName: vicissitudes
+  - className: mister
+    methods:
+    - returnType: BOOL
+      methodName: essence
+    - returnType: int
+      methodName: coiffures
+    - returnType: BOOL
+      methodName: jess
+    - returnType: NSString*
+      methodName: transcendence
+    - returnType: void
+      methodName: atoll
+    - returnType: BOOL
+      methodName: fleets
+  - className: mango
+    methods:
+    - returnType: NSString*
+      methodName: casein
+    - returnType: void
+      methodName: spans
+    - returnType: NSString*
+      methodName: anthrax
+    - returnType: BOOL
+      methodName: fieldworker
+    - returnType: NSString*
+      methodName: coracle
+    - returnType: NSString*
+      methodName: censures
+  - className: maze
+    methods:
+    - returnType: BOOL
+      methodName: place
+    - returnType: BOOL
+      methodName: pekingese
+    - returnType: void
+      methodName: bogeymen
+    - returnType: NSString*
+      methodName: tramway
+    - returnType: NSString*
+      methodName: northeast
+    - returnType: void
+      methodName: tarts
+  - className: vulgarism
+    methods:
+    - returnType: void
+      methodName: nylons
+    - returnType: NSString*
+      methodName: bequest
+    - returnType: int
+      methodName: formalin
+    - returnType: NSString*
+      methodName: straightedge
+    - returnType: NSString*
+      methodName: judiciary
+    - returnType: NSString*
+      methodName: hemlines
+  - className: reciter
+    methods:
+    - returnType: void
+      methodName: bayberry
+    - returnType: BOOL
+      methodName: internee
+    - returnType: BOOL
+      methodName: rosebushes
+    - returnType: NSString*
+      methodName: bonds
+    - returnType: int
+      methodName: multiple
+    - returnType: int
+      methodName: worrywarts
+  - className: discuses
+    methods:
+    - returnType: BOOL
+      methodName: harpy
+    - returnType: NSString*
+      methodName: chyme
+    - returnType: NSString*
+      methodName: tania
+    - returnType: BOOL
+      methodName: gambling
+    - returnType: void
+      methodName: phaeton
+    - returnType: void
+      methodName: sportswear
+- groupName: townswoman
+  classes:
+  - className: reformation
+    methods:
+    - returnType: NSString*
+      methodName: lit
+    - returnType: BOOL
+      methodName: cowman
+    - returnType: NSString*
+      methodName: tush
+    - returnType: NSString*
+      methodName: peelings
+    - returnType: NSString*
+      methodName: corpse
+    - returnType: BOOL
+      methodName: infancy
+  - className: feminists
+    methods:
+    - returnType: NSString*
+      methodName: hoyle
+    - returnType: int
+      methodName: exception
+    - returnType: int
+      methodName: spring
+    - returnType: BOOL
+      methodName: pele
+    - returnType: int
+      methodName: animals
+    - returnType: int
+      methodName: exhortation
+  - className: casabas
+    methods:
+    - returnType: int
+      methodName: brunswick
+    - returnType: NSString*
+      methodName: deity
+    - returnType: int
+      methodName: buttonhole
+    - returnType: BOOL
+      methodName: squeaker
+    - returnType: NSString*
+      methodName: intriguers
+    - returnType: BOOL
+      methodName: urethane
+  - className: barclay
+    methods:
+    - returnType: void
+      methodName: budges
+    - returnType: int
+      methodName: bruiser
+    - returnType: NSString*
+      methodName: indiscipline
+    - returnType: void
+      methodName: transshipment
+    - returnType: int
+      methodName: thoughtlessness
+    - returnType: void
+      methodName: wring
+  - className: aftereffect
+    methods:
+    - returnType: void
+      methodName: jinxes
+    - returnType: NSString*
+      methodName: beachwear
+    - returnType: BOOL
+      methodName: drainpipe
+    - returnType: NSString*
+      methodName: yiddish
+    - returnType: BOOL
+      methodName: squints
+    - returnType: NSString*
+      methodName: lumpectomies
+  - className: defect
+    methods:
+    - returnType: BOOL
+      methodName: tsimshian
+    - returnType: void
+      methodName: inspectors
+    - returnType: BOOL
+      methodName: buttonwood
+    - returnType: int
+      methodName: guile
+    - returnType: NSString*
+      methodName: entombment
+    - returnType: NSString*
+      methodName: tantrums
+  - className: brownsville
+    methods:
+    - returnType: NSString*
+      methodName: molokai
+    - returnType: void
+      methodName: crankshaft
+    - returnType: NSString*
+      methodName: topsail
+    - returnType: void
+      methodName: attar
+    - returnType: NSString*
+      methodName: momentum
+    - returnType: BOOL
+      methodName: medics
+  - className: sculptor
+    methods:
+    - returnType: void
+      methodName: quaalude
+    - returnType: NSString*
+      methodName: doffing
+    - returnType: BOOL
+      methodName: forayed
+    - returnType: int
+      methodName: fury
+    - returnType: NSString*
+      methodName: stevens
+    - returnType: NSString*
+      methodName: vijayawada
+  - className: flimflam
+    methods:
+    - returnType: void
+      methodName: multiplexers
+    - returnType: BOOL
+      methodName: juggling
+    - returnType: NSString*
+      methodName: cosmonaut
+    - returnType: BOOL
+      methodName: cripple
+    - returnType: void
+      methodName: charade
+    - returnType: void
+      methodName: tallinn
+  - className: waffle
+    methods:
+    - returnType: BOOL
+      methodName: dose
+    - returnType: void
+      methodName: quirk
+    - returnType: int
+      methodName: calculus
+    - returnType: int
+      methodName: wyoming
+    - returnType: BOOL
+      methodName: taegu
+    - returnType: void
+      methodName: katherine
+  - className: nightingale
+    methods:
+    - returnType: int
+      methodName: chucking
+    - returnType: NSString*
+      methodName: steer
+    - returnType: int
+      methodName: paw
+    - returnType: NSString*
+      methodName: eyepiece
+    - returnType: BOOL
+      methodName: obeisance
+    - returnType: BOOL
+      methodName: barbel
+- groupName: voter
+  classes:
+  - className: olfactories
+    methods:
+    - returnType: NSString*
+      methodName: misdoing
+    - returnType: void
+      methodName: magma
+    - returnType: int
+      methodName: firefox
+    - returnType: int
+      methodName: nightcap
+    - returnType: int
+      methodName: austronesian
+    - returnType: int
+      methodName: ashkhabad
+  - className: slicker
+    methods:
+    - returnType: NSString*
+      methodName: hears
+    - returnType: void
+      methodName: kristin
+    - returnType: void
+      methodName: low
+    - returnType: NSString*
+      methodName: phone
+    - returnType: int
+      methodName: handles
+    - returnType: BOOL
+      methodName: cheroot
+  - className: input
+    methods:
+    - returnType: BOOL
+      methodName: gravestone
+    - returnType: void
+      methodName: mugger
+    - returnType: BOOL
+      methodName: ox
+    - returnType: BOOL
+      methodName: boulevard
+    - returnType: BOOL
+      methodName: sorcerer
+    - returnType: NSString*
+      methodName: barb
+  - className: edamame
+    methods:
+    - returnType: BOOL
+      methodName: keogh
+    - returnType: void
+      methodName: honky
+    - returnType: int
+      methodName: sawhorses
+    - returnType: int
+      methodName: small
+    - returnType: int
+      methodName: salesclerk
+    - returnType: void
+      methodName: indianan
+  - className: ceramist
+    methods:
+    - returnType: BOOL
+      methodName: husking
+    - returnType: void
+      methodName: peter
+    - returnType: NSString*
+      methodName: eagles
+    - returnType: int
+      methodName: racket
+    - returnType: int
+      methodName: reflexive
+    - returnType: int
+      methodName: susie
+  - className: concern
+    methods:
+    - returnType: void
+      methodName: mack
+    - returnType: void
+      methodName: heaved
+    - returnType: void
+      methodName: incensing
+    - returnType: void
+      methodName: carboy
+    - returnType: int
+      methodName: riel
+    - returnType: int
+      methodName: caucus
+  - className: vader
+    methods:
+    - returnType: int
+      methodName: chrysanthemum
+    - returnType: BOOL
+      methodName: birthing
+    - returnType: int
+      methodName: bison
+    - returnType: int
+      methodName: benders
+    - returnType: NSString*
+      methodName: brits
+    - returnType: BOOL
+      methodName: monoplane
+  - className: dedicator
+    methods:
+    - returnType: NSString*
+      methodName: remington
+    - returnType: NSString*
+      methodName: quarterback
+    - returnType: void
+      methodName: ornamenting
+    - returnType: NSString*
+      methodName: jamaican
+    - returnType: void
+      methodName: ballad
+    - returnType: BOOL
+      methodName: gradualness
+  - className: garrotes
+    methods:
+    - returnType: NSString*
+      methodName: vassalage
+    - returnType: int
+      methodName: bisexuality
+    - returnType: BOOL
+      methodName: betterment
+    - returnType: BOOL
+      methodName: huggins
+    - returnType: int
+      methodName: clubhouse
+    - returnType: int
+      methodName: secretariat
+  - className: start
+    methods:
+    - returnType: BOOL
+      methodName: endemics
+    - returnType: void
+      methodName: tonga
+    - returnType: void
+      methodName: donkey
+    - returnType: BOOL
+      methodName: perusal
+    - returnType: int
+      methodName: hemostat
+    - returnType: void
+      methodName: pluralists
+  - className: slits
+    methods:
+    - returnType: BOOL
+      methodName: manning
+    - returnType: void
+      methodName: woad
+    - returnType: BOOL
+      methodName: environmentalism
+    - returnType: NSString*
+      methodName: neurosurgeon
+    - returnType: NSString*
+      methodName: crops
+    - returnType: int
+      methodName: inspiration
+- groupName: huns
+  classes:
+  - className: orleans
+    methods:
+    - returnType: int
+      methodName: tech
+    - returnType: int
+      methodName: huston
+    - returnType: NSString*
+      methodName: outriders
+    - returnType: int
+      methodName: ruder
+    - returnType: NSString*
+      methodName: initiation
+    - returnType: BOOL
+      methodName: rationale
+  - className: photo
+    methods:
+    - returnType: int
+      methodName: rider
+    - returnType: BOOL
+      methodName: snagged
+    - returnType: NSString*
+      methodName: jurists
+    - returnType: BOOL
+      methodName: lumbering
+    - returnType: int
+      methodName: bondholder
+    - returnType: void
+      methodName: nonobservance
+  - className: sawyer
+    methods:
+    - returnType: void
+      methodName: egyptian
+    - returnType: int
+      methodName: helve
+    - returnType: BOOL
+      methodName: cambers
+    - returnType: void
+      methodName: kristopher
+    - returnType: int
+      methodName: pogrom
+    - returnType: void
+      methodName: redistributing
+  - className: spic
+    methods:
+    - returnType: void
+      methodName: viper
+    - returnType: void
+      methodName: osborne
+    - returnType: void
+      methodName: sperms
+    - returnType: void
+      methodName: rho
+    - returnType: void
+      methodName: jubilee
+    - returnType: int
+      methodName: blucher
+  - className: wedding
+    methods:
+    - returnType: BOOL
+      methodName: safari
+    - returnType: void
+      methodName: retributions
+    - returnType: BOOL
+      methodName: butterfly
+    - returnType: int
+      methodName: brahmagupta
+    - returnType: BOOL
+      methodName: gilead
+    - returnType: BOOL
+      methodName: wilma
+  - className: observer
+    methods:
+    - returnType: BOOL
+      methodName: whiting
+    - returnType: NSString*
+      methodName: pitapat
+    - returnType: void
+      methodName: aptitude
+    - returnType: BOOL
+      methodName: cusp
+    - returnType: int
+      methodName: serration
+    - returnType: void
+      methodName: custodial
+  - className: inappropriateness
+    methods:
+    - returnType: void
+      methodName: mosaic
+    - returnType: int
+      methodName: natural
+    - returnType: BOOL
+      methodName: closing
+    - returnType: BOOL
+      methodName: artilleryman
+    - returnType: NSString*
+      methodName: audion
+    - returnType: void
+      methodName: backtalk
+  - className: antiviral
+    methods:
+    - returnType: int
+      methodName: lane
+    - returnType: BOOL
+      methodName: palanquin
+    - returnType: NSString*
+      methodName: aleppo
+    - returnType: BOOL
+      methodName: criticality
+    - returnType: void
+      methodName: migrant
+    - returnType: void
+      methodName: undercurrent
+  - className: wherry
+    methods:
+    - returnType: BOOL
+      methodName: knave
+    - returnType: BOOL
+      methodName: abilene
+    - returnType: void
+      methodName: augmenters
+    - returnType: BOOL
+      methodName: weeklies
+    - returnType: NSString*
+      methodName: geoffrey
+    - returnType: int
+      methodName: substructure
+  - className: snailing
+    methods:
+    - returnType: BOOL
+      methodName: jeremiad
+    - returnType: NSString*
+      methodName: filipino
+    - returnType: BOOL
+      methodName: hyades
+    - returnType: BOOL
+      methodName: clubhouses
+    - returnType: int
+      methodName: trifles
+    - returnType: int
+      methodName: richard
+  - className: och
+    methods:
+    - returnType: void
+      methodName: stealthiness
+    - returnType: void
+      methodName: explication
+    - returnType: BOOL
+      methodName: viceroys
+    - returnType: NSString*
+      methodName: auk
+    - returnType: int
+      methodName: altitude
+    - returnType: NSString*
+      methodName: gazpacho
+- groupName: taegu
+  classes:
+  - className: matchmaking
+    methods:
+    - returnType: void
+      methodName: parterres
+    - returnType: NSString*
+      methodName: sylvia
+    - returnType: void
+      methodName: imparting
+    - returnType: int
+      methodName: circulation
+    - returnType: int
+      methodName: gobble
+    - returnType: BOOL
+      methodName: specifying
+  - className: twinges
+    methods:
+    - returnType: NSString*
+      methodName: basilica
+    - returnType: NSString*
+      methodName: eglantine
+    - returnType: int
+      methodName: reconquest
+    - returnType: NSString*
+      methodName: ruminant
+    - returnType: NSString*
+      methodName: hornblende
+    - returnType: NSString*
+      methodName: advancements
+  - className: bury
+    methods:
+    - returnType: void
+      methodName: demobbing
+    - returnType: NSString*
+      methodName: workingwomen
+    - returnType: NSString*
+      methodName: prisoner
+    - returnType: NSString*
+      methodName: pasquale
+    - returnType: int
+      methodName: fishwives
+    - returnType: int
+      methodName: byzantium
+  - className: leigh
+    methods:
+    - returnType: BOOL
+      methodName: ulcerations
+    - returnType: int
+      methodName: ardent
+    - returnType: void
+      methodName: key
+    - returnType: void
+      methodName: clunkers
+    - returnType: void
+      methodName: reuther
+    - returnType: BOOL
+      methodName: sabina
+  - className: sulfate
+    methods:
+    - returnType: NSString*
+      methodName: tidied
+    - returnType: NSString*
+      methodName: petticoat
+    - returnType: NSString*
+      methodName: tangling
+    - returnType: int
+      methodName: dialects
+    - returnType: NSString*
+      methodName: keyhole
+    - returnType: BOOL
+      methodName: extremity
+  - className: dean
+    methods:
+    - returnType: int
+      methodName: fernando
+    - returnType: NSString*
+      methodName: moonshiner
+    - returnType: int
+      methodName: simper
+    - returnType: int
+      methodName: edith
+    - returnType: void
+      methodName: pamphleteer
+    - returnType: BOOL
+      methodName: sonar
+  - className: wavering
+    methods:
+    - returnType: int
+      methodName: ructions
+    - returnType: void
+      methodName: lvov
+    - returnType: BOOL
+      methodName: exosphere
+    - returnType: void
+      methodName: reimbursements
+    - returnType: NSString*
+      methodName: quiver
+    - returnType: int
+      methodName: loader
+  - className: stumbles
+    methods:
+    - returnType: NSString*
+      methodName: mortise
+    - returnType: void
+      methodName: secretariat
+    - returnType: void
+      methodName: hanoi
+    - returnType: NSString*
+      methodName: clem
+    - returnType: BOOL
+      methodName: josh
+    - returnType: NSString*
+      methodName: willingness
+  - className: newfoundland
+    methods:
+    - returnType: BOOL
+      methodName: goliath
+    - returnType: int
+      methodName: selectman
+    - returnType: int
+      methodName: motorcars
+    - returnType: BOOL
+      methodName: warmness
+    - returnType: BOOL
+      methodName: counterrevolution
+    - returnType: int
+      methodName: diagonal
+  - className: greek
+    methods:
+    - returnType: NSString*
+      methodName: metathesis
+    - returnType: BOOL
+      methodName: glutton
+    - returnType: void
+      methodName: cachepots
+    - returnType: NSString*
+      methodName: connecticut
+    - returnType: void
+      methodName: lord
+    - returnType: int
+      methodName: cods
+  - className: redevelopment
+    methods:
+    - returnType: void
+      methodName: viols
+    - returnType: int
+      methodName: dunes
+    - returnType: NSString*
+      methodName: carter
+    - returnType: BOOL
+      methodName: soporifics
+    - returnType: void
+      methodName: goatee
+    - returnType: void
+      methodName: aureole
+- groupName: gangtok
+  classes:
+  - className: crusader
+    methods:
+    - returnType: int
+      methodName: shudders
+    - returnType: NSString*
+      methodName: funnyman
+    - returnType: NSString*
+      methodName: death
+    - returnType: int
+      methodName: vociferation
+    - returnType: BOOL
+      methodName: soreness
+    - returnType: int
+      methodName: corduroys
+  - className: washboard
+    methods:
+    - returnType: BOOL
+      methodName: windcheaters
+    - returnType: BOOL
+      methodName: fluency
+    - returnType: void
+      methodName: facility
+    - returnType: int
+      methodName: rehearing
+    - returnType: int
+      methodName: yokel
+    - returnType: NSString*
+      methodName: lightweight
+  - className: quietude
+    methods:
+    - returnType: NSString*
+      methodName: cartoon
+    - returnType: void
+      methodName: viola
+    - returnType: BOOL
+      methodName: ware
+    - returnType: int
+      methodName: retorting
+    - returnType: int
+      methodName: triathlete
+    - returnType: int
+      methodName: transporter
+  - className: hobbits
+    methods:
+    - returnType: void
+      methodName: anglia
+    - returnType: void
+      methodName: symbol
+    - returnType: NSString*
+      methodName: fervor
+    - returnType: void
+      methodName: lagrange
+    - returnType: int
+      methodName: sideman
+    - returnType: BOOL
+      methodName: doctorow
+  - className: frankincense
+    methods:
+    - returnType: void
+      methodName: debacle
+    - returnType: NSString*
+      methodName: lenard
+    - returnType: BOOL
+      methodName: sacrifices
+    - returnType: void
+      methodName: bunkum
+    - returnType: void
+      methodName: perplexities
+    - returnType: void
+      methodName: chariot
+  - className: mineral
+    methods:
+    - returnType: BOOL
+      methodName: strangler
+    - returnType: void
+      methodName: marsala
+    - returnType: BOOL
+      methodName: oxidants
+    - returnType: void
+      methodName: falloff
+    - returnType: int
+      methodName: mabel
+    - returnType: NSString*
+      methodName: id
+  - className: thessaly
+    methods:
+    - returnType: BOOL
+      methodName: balloted
+    - returnType: BOOL
+      methodName: op
+    - returnType: BOOL
+      methodName: corers
+    - returnType: int
+      methodName: hugs
+    - returnType: NSString*
+      methodName: professorship
+    - returnType: int
+      methodName: attributions
+  - className: lechery
+    methods:
+    - returnType: void
+      methodName: denudation
+    - returnType: NSString*
+      methodName: citron
+    - returnType: void
+      methodName: complexities
+    - returnType: BOOL
+      methodName: horn
+    - returnType: int
+      methodName: roadster
+    - returnType: void
+      methodName: bipeds
+  - className: painkiller
+    methods:
+    - returnType: NSString*
+      methodName: gravestone
+    - returnType: BOOL
+      methodName: drupe
+    - returnType: int
+      methodName: carom
+    - returnType: BOOL
+      methodName: cayenne
+    - returnType: BOOL
+      methodName: bonds
+    - returnType: void
+      methodName: burris
+  - className: drives
+    methods:
+    - returnType: int
+      methodName: foxhunt
+    - returnType: int
+      methodName: undernourishment
+    - returnType: NSString*
+      methodName: messiah
+    - returnType: void
+      methodName: oxbow
+    - returnType: BOOL
+      methodName: japan
+    - returnType: NSString*
+      methodName: philby
+  - className: amide
+    methods:
+    - returnType: NSString*
+      methodName: cyberpunk
+    - returnType: int
+      methodName: nonperformance
+    - returnType: BOOL
+      methodName: descender
+    - returnType: NSString*
+      methodName: headquarters
+    - returnType: void
+      methodName: oceanfront
+    - returnType: void
+      methodName: guarders
