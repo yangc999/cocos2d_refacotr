@@ -33,9 +33,9 @@ def genCode(meta)
         h_path = '%s/%s.h' % [dir_path, cl['className']]
         c_path = '%s/%s.m' % [dir_path, cl['className']]
         File.open(h_path, 'a+') do |file|
-            file.puts '#import <Foundation/Foudation.h>'
+            file.puts '#import <Foundation/Foundation.h>'
             file.puts ''
-            file.puts '@interface %s : <NSObject>' % cl['className']
+            file.puts '@interface %s : NSObject' % cl['className']
             file.puts ''
             cl['methods'].each do |fn|
                 file.puts '%s(%s) %s;' % ['-', fn['returnType'], fn['methodName']]
