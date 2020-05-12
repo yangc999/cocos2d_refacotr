@@ -14,6 +14,10 @@ $classSize = 2
 $methodSize = 2
 $rets = ['NSString*', 'void', 'int', 'BOOL']
 
+File.open($dictPath, 'r') do |f|
+    $arr = f.readlines()
+end
+
 def queryWord(w)
     sleep 1
     puts 'query ' + w.to_s
@@ -122,7 +126,7 @@ end
 
 puts $scheme.to_yaml
 
-yaml_path = '.junk.yaml' % Dir.pwd
+yaml_path = '%s/junk.yaml' % Dir.pwd
 File.open(yaml_path, 'a+') do |f|
     f.puts $scheme.to_yaml
 end
