@@ -54,13 +54,13 @@ def genCode(meta)
                 file.puts '%s(%s) %s' % ['-', fn['returnType'], fn['methodName']]
                 file.puts '{'
                 if fn['returnType'] == 'NSString*'
-                    fn.puts '    return @"";'    
+                    file.puts '    return @"";'    
                 elsif fn['returnType'] == 'BOOL'
-                    fn.puts '    return YES;'
+                    file.puts '    return YES;'
                 elsif fn['returnType'] == 'void'
-                    fn.puts '    return;'
+                    file.puts '    return;'
                 elsif fn['returnType'] == 'int'
-                    fn.puts '    return 1;'
+                    file.puts '    return 1;'
                 end
                 file.puts '}'
             end
