@@ -32,7 +32,7 @@ def genCode(meta)
     meta['classes'].each do |cl|
         h_path = '%s/%s.h' % [dir_path, cl['className']]
         c_path = '%s/%s.m' % [dir_path, cl['className']]
-        File.open(h_path) do |file|
+        File.open(h_path, 'a+') do |file|
             file.puts '#import <Foundation/Foudation.h>'
             file.puts ''
             file.puts '@interface %s : <NSObject>' % cl['className']
@@ -45,7 +45,7 @@ def genCode(meta)
         end
         group.new_reference(h_path)
     
-        File.open(c_path) do |file|
+        File.open(c_path, 'a+') do |file|
             file.puts '#import "%s"' % File.basename(h_path)
             file.puts ''
             file.puts '@implementation %s' % cl['className']
