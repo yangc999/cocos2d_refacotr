@@ -132,7 +132,7 @@ def refact()
     $swap.each_value do |file|
         replace_classname(file)
     end
-    $xib.each_value do |file|
+    $xib.each do |file|
         replace_xib(file)
     end
     $todo.each do |file|
