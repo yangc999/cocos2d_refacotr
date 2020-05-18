@@ -25,8 +25,9 @@ def replace_classname(file)
             li = line.chomp
             if !li.include?('#include') and !li.include?('#import')
                 $class.each_key do |c|
-                    reg = Regexp.new('%s[^a-zA-Z0-9]+' % c)
-                    if !reg.match(li).nil? and !li.include?('set%s' % c) and !li.include?('get%s' % c)
+                    suffix_reg = Regexp.new('%s[^a-zA-Z0-9]+' % c)
+                    prefix_reg = Regexp.new('[a-zA-Z0-9]+%s' % c)
+                    if prefix_reg.match(li).nil? and !suffix_reg.match(li).nil?
                         nc = '%s%s' % [$prefix, c]
                         if li.include?('tolua_usertype')
                             ot = li.scan(/"(.*)"/)[0][0]
